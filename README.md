@@ -28,8 +28,7 @@ python encdec_tool.py --help
 ```
 Вывод:
 
-```
-usage: encdec_tool.py [-h] [-m {enc,dec}] [-k KEY] [-e EXTENSIONS [EXTENSIONS ...]] path {enc,dec} key
+```usage: whatif.py [-h] [-m {enc,dec}] [-k KEY] [-e EXTENSIONS [EXTENSIONS ...]] [-GK] path {enc,dec} key
 
 Encrypt or decrypt a file or folder using Fernet encryption.
 
@@ -45,6 +44,8 @@ options:
   -k KEY, --key KEY     Key file path
   -e EXTENSIONS [EXTENSIONS ...], --extensions EXTENSIONS [EXTENSIONS ...]
                         List of file extensions to encrypt
+  -GK, --generate-keyfile
+                        Generate a new key and save it to keyfile.key
 
 ```
 
@@ -88,6 +89,16 @@ python encdec_tool.py -f ./test_folder/ -m enc -k keyfile.key -e .mp4 .mkv
 ```
 
 Добавляя "-e .mp4 .mkv" вы говорите программе шифровать только файлы с расширением .mp4 и .mkv
+
+#### Генерация keyfile.key файла
+Если вы сперва хотите создать файл с ключом, то это правильное решение. 
+Чтобы это сделать:= напишите вот это:
+```
+python encdec_tool.py -GK
+# Или
+python encdec_tool --generate-keyfile
+```
+Тогда у вас появится keyfile.key с которым уже можно работать.
 
 ### Заключение:
 С помощью этого инструмента вы можете защитить свои файлы. Либо чужие, тут решайте сами, но автор ни в чём не причастен если с помощью моей программы чьи либо файлы пострадают. 
