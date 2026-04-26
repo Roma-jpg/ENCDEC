@@ -1,4 +1,5 @@
 # ENCDEC
+[English version of this document](https://github.com/Roma-jpg/ENCDEC/blob/main/README_en.md)
 
 ## Описание
 
