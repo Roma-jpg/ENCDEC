@@ -1,5 +1,7 @@
 # ENCDEC
 
+[Русская версия этого документа](https://github.com/Roma-jpg/ENCDEC/blob/main/README.md)
+
 ## Description
 
 **ENCDEC** is a command-line tool for encrypting and decrypting files or folders using the Fernet symmetric encryption algorithm. It is a simple and reliable way to protect sensitive data.
